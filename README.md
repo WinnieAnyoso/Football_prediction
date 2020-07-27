@@ -1,6 +1,6 @@
 # Football_prediction
-Overview 
 
+# 1. a)Defining the question
 You have been recruited as a football analyst in a company - Mchezopesa Ltd and tasked to accomplish the task below.
 
 A prediction result of a game between team 1 and team 2, based on who's home and who's away, and on whether or not the game is friendly (include rank in your training).
@@ -9,7 +9,7 @@ You have two possible approaches (as  shown below) given the datasets that will 
 
 Input: Home team, Away team, Tournament type (World cup, Friendly, Other)
 
-Approach 1: Polynomial approach
+* Approach 1: Polynomial approach
 
 What to train given:
 
@@ -20,99 +20,59 @@ Model 1: Predict how many goals the home team scores.
 
 Model 2: Predict how many goals the away team scores.
 
-Approach 2: Logistic approach
+* Approach 2: Logistic approach
 
 Feature Engineering: Figure out from the home team’s perspective if the game is a Win, Lose or Draw (W, L, D)
 
-Hint:
+#2. Metrics for success
 
-Home Team
+The analyses requires us to come up with an accurate prediction model for the home and away scores based on their previous scores and previous rankings. 
+We have to identify the key mettrics that can be used to determine this. 
 
-Home Team Score
-
-Away
-
-Team
-
-Away Team Score
-
-Year
-
-Home Team Rank
-
-Away Team Rank
-
-Tournament Type
-
-Status
-
+We will then implement the solution by performing polynomial and logistic regression and make predictions
  
+#3. Context
 
-(W,L,D)
+A more detailed explanation and history of the rankings is available here: [Link (https://en.wikipedia.org/wiki/FIFA_World_Rankings)] 
 
-Morocco
-
-2
-
-Kenya
-
-1
-
-2003
-
-20
-
-58
-
-World Cup
-
-Win
-
- 
-
-Context
-
-A more detailed explanation and history of the rankings is available here: [Link (Links to an external site.)] 
-
-An explanation of the ranking procedure is available here: [Link (Links to an external site.)]
+An explanation of the ranking procedure is available here: [Link (https://www.fifa.com/fifa-world-ranking/procedure/men)]
 
 Dataset Columns
 
-Some features are available on the FIFA ranking page [Link (Links to an external site.)].
+Some features are available on the FIFA ranking page [Link (https://www.fifa.com/fifa-world-ranking/ranking-table/men/)].
 
-Rank
-Country Abbreviation
-Total Points
-Previous Points
-Rank Change
-Average Previous Years Points
-Average Previous Years Points Weighted (50%)
-Average 2 Years Ago Points
-Average 2 Years Ago Points Weighted (30%)
-Average 3 Years Ago Points
-Average 3 Years Ago Points Weighted (20%)
-Confederation
-Date - date of the match
-Home_team - the name of the home team
-Away_team - the name of the away team
-Home_score - full-time home team score including extra time, not including penalty-shootouts
-Away_score - full-time away team score including extra time, not including penalty-shootouts
-Tournament - the name of the tournament
-City - the name of the city/town/administrative unit where the match was played
-Country - the name of the country where the match was played
-Neutral - TRUE/FALSE column indicating whether the match was played at a neutral venue
-Assessment Expectation
 
-In order to work on the above problem, you need to do the following:
+#4. Experimental Design 
 
-Define the question, the metric for success, the context, experimental design taken and the appropriateness of the available data to answer the given question
-Expected flow for the assessment:
-Perform your EDA
-Perform any necessary feature engineering 
-Check of multicollinearity
-Start building the model
-Cross-validate the model
-Compute RMSE
-Create residual plots for your models, and assess their heteroscedasticity using Bartlett’s test
-Perform appropriate regressions on the data including your justification
-Challenge your solution by providing insights on how you can make improvements.
+1) Business Understanding: This should give a clear understanding of the data and business in question in order to make conclusive summaries and approaches in tackling the research problem at hand.
+
+2) Reading the data: Reading our data with and aim to understand the variables and observations. 
+
+3) Checking our data: This to get details about the dataset, the number of records, the statistal summary,the datatypes in our dataset among others.
+
+4) Tidying up the data (Data cleaning): This was to drop unnecesaary columns, delete duplicate records, get rid of any null values, merge dataframes if need be etc.
+
+5) EDA, the data was analysed, visualized and conclusions were then drawn.
+
+6) Implementing the solution using Logistic and polynomial regression.
+
+* Check of multicollinearity
+
+* Start building the model
+
+* Cross-validate the model
+
+* Compute RMSE
+
+* Create residual plots for your models, and assess their heteroscedasticity 
+
+* using Bartlett’s test
+
+* Perform appropriate regressions on the data including your justification
+
+7) Challenge your solution by providing insights on how you can make improvements.
+Dataset
+
+#5.Appropriatenes of the data
+The data source is from fifa world rankings from 1993 and results of the matches are way back from the 19th century. The data is updated year up until late last year(2019) when the most recent rankings were made hence the data is up to date and relevant in making conclusive analyses.
+
