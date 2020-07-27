@@ -1,4 +1,4 @@
-# Football_prediction
+# Football_prediction Using Regrssion
 
 # 1. a)Defining the question
 You have been recruited as a football analyst in a company - Mchezopesa Ltd and tasked to accomplish the task below.
